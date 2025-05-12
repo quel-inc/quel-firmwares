@@ -1,0 +1,27 @@
+{
+  "packages": [
+    {
+      "name": "default",
+      "directories": [
+        "plain_bits/au200_clockmaster_20240118",
+        "plain_bits/au50_simplemulti_20240125",
+        "plain_bits/zephyr-exstickge_clkdisty_20240731",
+        "plain_bits/zephyr-exstickge_quel1se-fujitsu11-a_20240731",
+        "plain_bits/zephyr-exstickge_quel1se-fujitsu11-b_20240731",
+        "plain_bits/zephyr-exstickge_quel1se-riken8_20240731"
+      ]
+    },
+    {
+      "name": "for_0.8",
+      "directories": [
+        "plain_bits/au200_clockmaster_20240118",
+        "plain_bits/au50_feedback_20240110",
+        "plain_bits/au50_simplemulti_20240125",
+        "plain_bits/zephyr-exstickge_clkdisty_20240731",
+        "plain_bits/zephyr-exstickge_quel1se-fujitsu11-a_20240731",
+        "plain_bits/zephyr-exstickge_quel1se-fujitsu11-b_20240731",
+        "plain_bits/zephyr-exstickge_quel1se-riken8_20240731"
+      ]
+    }
+  ]
+}
