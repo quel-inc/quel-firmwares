@@ -106,7 +106,8 @@ directories=$(jq -r ".packages[] | select(.name == \"$PACKAGE_NAME\") | .directo
 if [ -d "$DATA_DIR" ] && [ -n "$(ls -A "$DATA_DIR")" ]; then
   response="yes"
   if [ "$ASSUME_YES" != true ]; then
-    echo "Firmware images already exist in $DATA_DIR. Do you want to replace them? (yes/no) "
+    echo "Firmware images already exist in $DATA_DIR. Do you want to replace them?"
+    echo -n "Type 'yes' to continue with replacement: "
     read -r response
   fi
   if [ "$response" != "yes" ]; then
