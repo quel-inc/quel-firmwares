@@ -8,11 +8,10 @@ DATA_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/quelware/firmwares"
 TARGZ_TEMP=$(mktemp)
 PACKAGES_JSON_TEMP=$(mktemp)
 
-trap 'rm -f "$TARGZ_TEMP" "$PACKAGES_JSON_TEMP"; exit' EXIT
+trap 'rm -f "$TARGZ_TEMP" "$PACKAGES_JSON_TEMP"' EXIT
 
 error_exit() {
   echo "Error: $1" >&2
-  rm -f "$TARGZ_TEMP" "$PACKAGES_JSON_TEMP"
   exit 1
 }
 
